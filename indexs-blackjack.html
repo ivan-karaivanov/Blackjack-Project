@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="stylesblackjack.css">
+</head>
+
+<body>
+    <h1>Blackjack</h1>
+    <audio id="background-audio" src="CasinoRoyal.mp3" controls>
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        const audio = document.getElementById("background-audio");
+        function playAudio() {
+            audio.play();
+        }
+    </script>
+    <p id="message-el">Want to play a round?</p>
+    <p id="cards-el">Cards: </p>
+    <p id="sum-el">Sum: </p>
+    <p id="player-el"></p>
+    <button onclick="startGame()">START GAME</button>
+    <button onclick="newCard()">NEW CARD</button>
+    
+    
+    <div class="box">
+        <p>Blackjack is a card game where players aim to reach a hand value as close to 21 as possible without exceeding it.
+            Players are dealt two cards and can choose to "hit" to receive additional cards or "stand" to keep their current
+            total. Number cards retain their face value, face cards are worth 10, and Aces can be counted as 1 or 11. The
+            objective is to beat the dealer's hand without going over 21, and achieving a hand value of 21 with the first
+            two cards results in a "Blackjack" and typically offers a higher payout.</p>
+        <iframe src="https://giphy.com/embed/3o6ozz6ncHTtmuhW36" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <p>
+            <a href="https://giphy.com/gifs/showtime-dice-andrew-clay-shodice-3o6ozz6ncHTtmuhW36"></a>
+        </p>
+        <a href="https://www.youtube.com/watch?v=eyoh-Ku9TCI">Video on how to play the game</a>
+    </div>
+
+    <img src="imagetwo.jpg" alt="Card game" class="shrink-image">
+
+    <script src="blackjack.js"></script>
+
+</body>
+
+</html>
